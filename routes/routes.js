@@ -13,11 +13,7 @@ movies:movies});
 );
 
 
-router.get('*',function(req,res)
-{
-  res.render('not-found');
-}
-);
+
 
 router.get('/movies/:episode_number',function(req,res)
 {
