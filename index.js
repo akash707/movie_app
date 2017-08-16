@@ -3,9 +3,9 @@ var app= express();
 var routes=require('./routes/routes');
 var path=require('path');
 
-app.use(express.static(path.join('./'+__dirname+'/public')));
+app.use(express.static(path.join('./'+ __dirname +'/public')));
 
-app.set('views', _dirname + '/assets/views');
+app.set('views', __dirname + '/assets/views');
 app.set('view engine','ejs');
 
 app.use(routes);
