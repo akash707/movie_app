@@ -35,7 +35,7 @@ router.get('/movies/:episode_number',function(req,res)
   }
 
   else {
-    res.send("This is not the page you are looking");
+    res.render('not-found');
   }
   }
 
