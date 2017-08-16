@@ -4,7 +4,7 @@ var moviesJSON=require('../movies.json');
 
 
 
-router.get('/',function(req,res)
+router.get('/home',function(req,res)
 {
   var movies=moviesJSON.movies;
 res.render('home',{title:'star war movies',
