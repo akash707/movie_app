@@ -41,5 +41,11 @@ router.get('/movies/:episode_number',function(req,res)
 
 );
 
+router.get('/',function(req,res)
+{
+   res.render('not-found');
+}
+);
+
 
 module.exports=router;
