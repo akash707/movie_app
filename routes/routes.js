@@ -4,7 +4,7 @@ var moviesJSON=require('../movies.json');
 
 
 
-router.get('/home',function(req,res)
+router.get('/',function(req,res)
 {
   var movies=moviesJSON.movies;
 res.render('home',{title:'star war movies',
@@ -12,6 +12,12 @@ movies:movies});
 }
 );
 
+
+router.get('*',function(req,res)
+{
+  res.render('not-found');
+}
+);
 
 router.get('/movies/:episode_number',function(req,res)
 {
